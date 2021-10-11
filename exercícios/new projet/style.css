@@ -1,0 +1,411 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root {
+    --cor0: #B8D9C6; 
+    --cor1: #6AA695;
+    --cor2: #347367;
+    --cor3: #1C5359; 
+    --cor4: #193140; 
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Quicksand', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: darkslategray;
+    width: 1349px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+header {
+    margin: 10px 0px;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.254);
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1,2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 60px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+/*Sobre nós*/
+
+.sobre {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.sobre .contentBx {
+    background: #162c3b;
+    padding: 100px;
+    width: 50%; /*fez o texto ocupar 50% a tela para podemos colocar img*/
+}
+
+.cabeçalho {
+    color: #fff;
+    font: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sobre .imgBx {
+    background: url(window.jpg);
+    width: 50%;
+    background-size: cover; /*ajusta um pouco a imagem*/
+    background-position: center;
+
+}
+/*Serviços*/
+
+.serviços {
+    background: #12222f;
+    padding: 100px;
+    text-align: center;
+}
+
+.serviços .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.serviços .container .seviçoBx {
+    position: relative;
+    background: white;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.serviços .container .seviçoBx img {
+    max-width: 100px;
+}
+
+.serviços .container .seviçoBx h2 {
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+section > h2 {
+    color: rgb(201, 201, 201);
+}
+
+
+
+/*Nosso conteudo*/
+
+.tecnologia {
+    background-color: #3f8ffc;
+    width: 94%;
+    padding: 40px;
+    padding-top: 300px;
+    margin-top: -300px; /*é o que faz as boxs ficare entre as cores azul claro e azul escuro*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tecnologia .contentBx {
+    max-width: 800px;
+}
+
+.tecnologia .imgBx {
+    max-width: 350px;
+}
+
+.tecnologia .imgBx img {
+    max-width: 100%;
+}
+
+/*Clientes*/
+
+.cliente {
+    background: #162c3b;
+    padding: 100px;
+}
+
+.cliente .imgBx {
+    display: flex; /* pra image ficar horinzontal*/
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /*organiza verticalmente*/
+    margin-top: 40px; /*espaçamento das imagens*/
+}
+
+.cliente .imgBx img {
+    max-width: 200px; /*tamanho das logos/imagens*/
+    margin: 20px;
+    opacity: 0.25; /*transparencia da cor da logo/imagem*/
+    cursor: pointer; /*o cursor interage com a logo*/
+}
+
+.cliente .imgBx img:hover {
+    opacity: 1; /*faz a cor da logo voltar quando o mouse interage com a logo*/
+}
+
+.cliente .cabeçalho {
+    color: white;
+}
+
+/* Avaliações*/
+
+.avaliações {
+    position: relative;
+    padding: 100px;
+    background: #12222d;
+    text-align: center;
+}
+
+
+.avaliações .container {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.contentBx  h3 {
+    color: black;
+}
+
+.avaliações .container .contentBx {
+    background: white;
+    padding: 45px 2px;
+    width: 550px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.avaliações .container .contentBx p {
+    font-style: italic;
+}
+
+.avaliações .container .contentBx h3 {
+    width: 100%;
+    text-align: end;
+    font-weight: 500px;
+    color: rgb(40, 40, 123);
+}
+
+.avaliações .cabeçalho {
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+.cor {
+    color: black;
+}
+
+/*contatos*/
+
+.contatos {
+    padding: 100px;
+    background: #162c3b;
+    text-align: center;
+}
+
+.sobre2 {
+    margin: -40px;
+}
+
+.redbg {
+    background: url(red.jpg) !important; /*"!important" fez a imagem (red) fcar de backgroud*/
+    background-size: cover;
+    background-position: center;
+    width: 1389px;
+}
+
+.forma .inputBx {
+    margin-bottom: 40px; /*deu os espaçamentos das caixas de escrita*/
+}
+
+.forma .inputBx input {
+    width: 80%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 2px solid white; /*bordas brancas que ficam em baixo*/
+}
+
+.forma .inputBx input::placeholder {
+    color: white; /*faz sumir a pré frase quando você escreve*/
+}
+
+.forma .inputBx textarea { /*faz a mesma coisa que o outro só que especificamente com o textarea*/
+    width: 80%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 20px 10px 10px 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    min-height: 150px; /*da mais espaço no local da mensagem*/
+    border-bottom: 2px solid white; /*bordas brancas que ficam em baixo*/
+}
+
+.forma .inputBx textarea::placeholder {
+    color: white; /*faz sumir a pré frase quando você escreve*/
+}
+
+.forma .inputBx input[type="Enviar"] {
+    width: 150px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: 400p;
+    text-align: center;
+}
+
+/*footer*/
+.footer {
+    background: #162c3b;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer ul li a img {
+    filter: invert(1);
+    max-width: 20px;
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 20px 50px;
+    }
+    .header h2 {
+        font-size: 36px;
+    }
+    .header p {
+        color: white;
+        font-size: 18px;
+    }
+    .sobre {
+        flex-direction: column;
+    }
+    .sobre .contentBx,
+    .sobre .imgBx {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .serviços {
+        padding: 50px;
+    }
+    .serviços .container {
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .serviços .container .seviçoBx {
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .tecnologia {
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .tecnologia .imgBx {
+        justify-content: center;
+    }
+    .cliente {
+        padding: 50px;
+    }
+    .cliente .contentBx {
+        padding: 60px 40px;
+        max-width: 550px;
+        margin-bottom: 40px;
+    }
+    .cliente .contentBx:last-child {
+        margin-bottom: 0px;
+    }
+    .contatos {
+        padding: 50px;
+    }
+    .footer {
+        padding: 20px 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer ul {
+        margin-bottom: 20px;
+    }
+}
