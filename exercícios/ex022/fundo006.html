@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>d</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover; 
+            background-attachment: fixed;
+            /*fixed == fixa a imagem sem ela rolar*/
             /*cover ocupa 100% da imagem*/
             /*contain faz aparecer toda a imagem, mas fica com barras pretas*/
+            /*Short hand = background
+                color > image > position > reapeat > (size) > attachment
+            */
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat  fixed;
+            background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -29,7 +36,8 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis maxime quo exercitationem dignissimos ullam. Libero ex at reiciendis facere eveniet quam recusandae a enim, obcaecati dolore veniam quibusdam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. In inventore accusantium est ea iure temporibus delectus, ab dignissimos voluptatibus repellat fugiat unde doloribus minima iusto. Unde odit non aliquid vero!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis maxime quo exercitationem dignissimos ullam. Libero ex at reiciendis facere eveniet quam recusandae a enim, obcaecati dolore veniam quibusdam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. In inventore accusantium est ea iure temporibus delectus, ab dignissimos voluptatibus repellat fugiat unde doloribus minima iusto. Unde odit non aliquid vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam nobis necessitatibus, ducimus fugit odio recusandae eos error nemo dolorum et quis repudiandae, provident velit eligendi ex tempora nostrum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi cupiditate exercitationem voluptatem facere ad reiciendis, perferendis a culpa qui et, perspiciatis voluptas atque voluptates modi eius tempora, dolorum rerum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis maxime quo exercitationem dignissimos ullam. Libero ex at reiciendis facere eveniet quam recusandae a enim, obcaecati dolore veniam quibusdam quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. In inventore accusantium est ea iure temporibus delectus, ab dignissimos voluptatibus repellat fugiat unde doloribus minima iusto. Unde odit non aliquid vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum numquam nobis necessitatibus, ducimus fugit odio recusandae eos error nemo dolorum et quis repudiandae, provident velit eligendi ex tempora nostrum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi cupiditate exercitationem voluptatem facere ad reiciendis, perferendis a culpa qui et, perspiciatis voluptas atque voluptates modi eius tempora, dolorum rerum?Laborum numquam nobis necessitatibus, ducimus fugit odio recusandae eos error nemo dolorum et quis repudiandae, provident velit eligendi ex tempora nostrum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto eligendi cupiditate exercitationem voluptatem facere ad reiciendis, perferendis a culpa qui et, perspiciatis voluptas atque voluptates modi eius tempora, dolorum rerum?
+        </p>
     </main>
 </body>
 </html>
