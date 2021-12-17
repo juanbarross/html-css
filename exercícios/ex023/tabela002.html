@@ -20,10 +20,22 @@
             padding: 10px;
         }
 
-        thead, tfoot {
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
             background-color: gray;
+        }
+
+        thead, tfoot {
+            background-color: rgb(28, 27, 27);
             color: white;
         }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(191, 173, 173);
+        }
+
         .num {
             text-align: right;
         }
@@ -32,10 +44,11 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>População das unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -150,11 +163,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 317 639</strong></td>
             </tr>
             <tr>
-                <th>N° Total de Dozes precisas para a População</th>
+                <th scope="row">N° Total de Dozes precisas para a População</th>
                 <td class="num"><strong>426 635 278</strong></td>
             </tr>
         </tfoot>
