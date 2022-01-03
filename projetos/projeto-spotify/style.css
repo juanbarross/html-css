@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --font: 'Kanit' cursive;
+    --font2: 'Courgette';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+p, h2, h4 {
+    font-family: var(--font2);
+}
+
+.main {
+    position: relative;
+    background: linear-gradient(120deg,#181A1B, #181A1B 62%, #2EBD59 62%, #2EBD59 100%);
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    font-family: var(--font);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+header.logo {
+    max-width: 50px;
+    margin-right: 20px; 
+}
+
+header > ul {
+    display: flex;
+}
+
+header > ul > li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+header > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: var(--font2);
+}
+
+header > ul > li > a:hover,
+header > ul > li > a.active
+{
+    color: #2EBD59;
+}
+
+.app {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181A1B; 
+    color: #2EBD59;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.app:hover {
+    background-color: #45bd69;
+    color: #181A1B;
+}
+
+.app ion-icon {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.contentbx {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contentbx .text {
+    max-width: 800px;
+}
+
+.contentbx .text h2 {
+    font-size: 6em;
+    color: #2EBD59;
+}
+
+.contentbx .text p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+.contentbx .text h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2EBD59;
+}
+
+.btn {
+    background-color: #2EBD59;
+    color: black;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    margin: 5px 20px 5px 0;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #5cd280;
+}
+
+.btn ion-icon {
+    margin-right: 10px;
+    font-family: 1.4em;
+}
