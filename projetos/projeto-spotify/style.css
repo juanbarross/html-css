@@ -15,7 +15,7 @@
     box-sizing: border-box
 }
 
-p, h2, h4 {
+h2, h4, p {
     font-family: var(--font2);
 }
 
@@ -40,7 +40,7 @@ header {
     align-items: center;
 }
 
-img {
+header > a > img {
     height: 100px;
     width: 100px;
 }
@@ -100,6 +100,7 @@ header > ul > li > a.active
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .contentbx .text {
@@ -141,4 +142,58 @@ header > ul > li > a.active
 .btn ion-icon {
     margin-right: 10px;
     font-family: 1.4em;
+}
+
+.imgbx img {
+    margin-left: 50px;
+    margin-right: 100px;
+    max-width: 600px; /*Fez ficar grande*/
+    display: none;
+}
+
+.imgbx img.active {
+    display: block;
+}
+
+.dots {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dots .dot {
+    position: relative;
+    width: 10px;
+    height: 30px;
+    background: #181a1b98;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.dots .dot.active {
+    background: #181A1B;
+}
+
+.social {
+    position: absolute; /*Faz ficar do lado esquerdo*/
+    bottom: 30px;
+    display: flex;
+}
+
+.social li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.social li a {
+    font-size: 1.8em;
+    color: #2EBD59;
+}
+
+.social li a:hover {
+    color: #5cd280;
 }
