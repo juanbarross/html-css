@@ -251,4 +251,5 @@ header > ul > li > a.active
         display: flex;
         left: 50%;
         transform: translateX(-50%);
+    }
 }
