@@ -197,3 +197,58 @@ header > ul > li > a.active
 .social li a:hover {
     color: #5cd280;
 }
+
+/*Responsividade*/
+
+@media (max-width:991px) 
+{
+    header {
+        padding: 0px;
+        justify-content: space-between;
+    }
+    .main {
+        padding: 60px;
+        background: #181A1B;
+    }
+    .app {
+        display: none;
+    }
+    .contentbx {
+        flex-direction: column-reverse;
+        margin: 30px 0px;
+    }
+    .imgbx img {
+        margin: 0;
+    }
+    .dots {
+        position: relative;
+        top: initial;
+        transform: none;
+        right: initial;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .dots .dot {
+        width: 25px;
+        height: 10px;
+        background: #2EBD59;
+        opacity: 0.2;
+    }
+    .dots .dot.active {
+        background: #2EBD59;
+        opacity: 1;
+    }
+    .contentbx .text {
+        text-align: center;
+    }
+    .contentbx .text h2 {
+        font-size: 4em;
+    }
+    .social {
+        position: absolute;
+        bottom: 30px;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+}
